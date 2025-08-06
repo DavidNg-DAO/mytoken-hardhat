@@ -1,32 +1,25 @@
-# MyToken Hardhat Project
+# 🦾 MyToken Hardhat Project
 
-This repository contains the full Hardhat setup for a custom ERC20-style token called **MyToken**, designed for testing and deployment on Ethereum-compatible networks.
+This project demonstrates a basic ERC-20 token smart contract using the Hardhat development environment. It includes contract code, tests, and deployment scripts built for learning and practical development in Web3.
 
-## 🧠 What’s Inside
+## 🔧 Project Structure
 
-- ✅ Smart contract (`MyToken.sol`)
-- ✅ Deployment script using Hardhat
-- ✅ Unit tests
-- ✅ Sample configuration (`hardhat.config.js`)
-- ✅ Lock contract for demonstration
+- `contracts/MyToken.sol` — Your ERC-20 Token contract (custom name: `MyToken`)
+- `contracts/Lock.sol` — Sample locking contract
+- `scripts/deploy.js` — Deployment script for Hardhat
+- `test/Lock.js` — Sample test using Mocha/Chai
+- `hardhat.config.js` — Hardhat configuration
 
-## 🛠️ Tools Used
+## 🚀 How to Use
 
-- [Hardhat](https://hardhat.org/)
-- [Ethers.js](https://docs.ethers.org/)
-- [Chai](https://www.chaijs.com/) for assertions
-- Solidity ^0.8.28
+To run tasks, open a terminal in this folder and try:
 
-## 🧪 How to Use
-
-### 1. Clone & Install
 ```bash
-git clone https://github.com/DavidNg-DAO/mytoken-hardhat.git
-cd mytoken-hardhat
-npm install
+npx hardhat help
 npx hardhat compile
 npx hardhat test
+REPORT_GAS=true npx hardhat test
+npx hardhat node
 npx hardhat run scripts/deploy.js --network localhost
-Author
-David Ng — exploring Solidity, smart contracts, and Web3 infrastructure
-GitHub: @DavidNg-DAO
+
+
